@@ -1,0 +1,6 @@
+{
+  "success": false,
+  "error": "list indices must be integers or slices, not str",
+  "symbol": "ETHUSDT",
+  "interval": "1h"
+}
