@@ -1,0 +1,415 @@
+{
+  "api": {
+    "binance": {
+      "base_url": "https://fapi.binance.com",
+      "timeout": 30,
+      "max_retries": 3,
+      "rate_limit": 1200,
+      "testnet": false,
+      "weight_limit": 6000,
+      "api_key": "61qQgi4q8huKKIz42SUNNJPHFw09hM2LcDqzqdw3IcvubnmzCmv4AbnIhRmqxOMU",
+      "api_secret": "rqNFp1F2CRJ9bAYuQ5i56xRQ4XMBb6AeplECRklbHPEcuY93tNpuhyxiVrH3pveD",
+      "simulation_mode": false
+    },
+    "coingecko": {
+      "base_url": "https://api.coingecko.com/api/v3",
+      "timeout": 30,
+      "max_retries": 3,
+      "rate_limit": 1200,
+      "testnet": false,
+      "weight_limit": 6000,
+      "api_key": null,
+      "api_secret": null,
+      "simulation_mode": false
+    }
+  },
+  "trading": {
+    "symbol": "BTCUSDT",
+    "initial_capital": 10000.0,
+    "risk_per_trade": 0.005,
+    "max_positions": 3,
+    "max_leverage": 20,
+    "base_currency": "USDT",
+    "intervals": {
+      "small": "15m",
+      "medium": "1h",
+      "large": "4h",
+      "daily": "1d"
+    },
+    "macd": {
+      "fast": 13,
+      "slow": 34,
+      "signal": 9
+    },
+    "ma_periods": [
+      30,
+      50,
+      120,
+      200,
+      256
+    ],
+    "macd_divergence": {
+      "lookback_period": 100,
+      "min_peak_distance": 5,
+      "prominence_threshold": 0.1,
+      "confirmation_candles": 3,
+      "min_r_squared": 0.7,
+      "min_trend_points": 2,
+      "min_divergence_strength": 0.3,
+      "min_duration_hours": 12,
+      "max_duration_hours": 168,
+      "dynamic_threshold": true,
+      "min_significance": 0.02,
+      "continuous_detection": true,
+      "consecutive_signals": 2,
+      "prominence_mult": 0.5,
+      "strength_filter": 0.6
+    },
+    "risk": {
+      "max_position_size": 0.05,
+      "max_total_exposure": 0.9,
+      "max_drawdown": 0.05,
+      "loss_limit": 5,
+      "emergency_stop_loss": 0.15,
+      "risk_per_trade": 0.02,
+      "stop_loss_pct": 0.01,
+      "take_profit_ratio": 3.0,
+      "max_leverage": 20,
+      "leverage_bull": 5.0,
+      "leverage_bear": 3.0,
+      "stop_loss_mult": 1.2,
+      "max_add_count": 5,
+      "add_profit_thresh": 0.02,
+      "time_stop_min": [
+        180,
+        360
+      ],
+      "funding_thresh": 0.0001,
+      "confidence_threshold": 0.5,
+      "dynamic_stop_loss": true,
+      "trailing_stop_loss": true,
+      "partial_close_profit": 0.03,
+      "emergency_atr_mult": 2.0,
+      "breakeven_multiplier_base": 1.0,
+      "progressive_stop_loss": {
+        "enabled": true,
+        "profit_thresholds": {
+          "breakeven": 5.0,
+          "profit_5pct": 15.0,
+          "profit_15pct": 30.0
+        },
+        "stop_levels": {
+          "initial": "original",
+          "breakeven": 0.0,
+          "profit_5pct": 5.0,
+          "profit_15pct": 15.0
+        }
+      },
+      "advanced_progressive_stop_loss": {
+        "enabled": true,
+        "enable_technical_analysis": true,
+        "technical_confidence_threshold": 0.6,
+
+        "roi_levels": {
+          "level_0": {
+            "roi_range": [-10, 5],
+            "protection_ratio": 0.0,
+            "strategy": "original_stop_loss",
+            "description": "保持原始止损"
+          },
+          "level_1": {
+            "roi_range": [5, 15],
+            "protection_ratio": 0.0,
+            "strategy": "move_to_breakeven",
+            "description": "移至保本点"
+          },
+          "level_2": {
+            "roi_range": [15, 30],
+            "protection_ratio": 0.05,
+            "strategy": "protect_5pct_profit",
+            "description": "保护5%利润"
+          },
+          "level_3": {
+            "roi_range": [30, 50],
+            "protection_ratio": 0.12,
+            "strategy": "protect_12pct_profit",
+            "description": "保护12%利润",
+            "set_reduction_base": true
+          },
+          "level_4": {
+            "roi_range": [50, 80],
+            "protection_ratio": 0.20,
+            "strategy": "protect_20pct_profit",
+            "description": "保护20%利润",
+            "enable_reduction": true,
+            "reduction_pct": 0.20
+          },
+          "level_5": {
+            "roi_range": [80, 150],
+            "protection_ratio": 0.30,
+            "strategy": "protect_30pct_profit",
+            "description": "保护30%利润",
+            "cumulative_reduction_pct": 0.40
+          },
+          "level_6": {
+            "roi_range": [150, 1000],
+            "protection_ratio": 0.50,
+            "strategy": "protect_50pct_profit",
+            "description": "保护50%利润",
+            "cumulative_reduction_pct": 0.70,
+            "core_position_hold": true
+          }
+        },
+
+        "dynamic_adjustments": {
+          "enable_market_condition_adjustment": true,
+          "enable_volatility_adjustment": true,
+          "market_adjustments": {
+            "bullish": -0.02,
+            "bearish": 0.02,
+            "sideways": 0.0
+          },
+          "volatility_adjustments": {
+            "high_vol_threshold": 2.0,
+            "high_vol_adjustment": 0.05,
+            "low_vol_threshold": 0.5,
+            "low_vol_adjustment": -0.02
+          }
+        },
+
+        "technical_analysis": {
+          "enable_support_resistance": true,
+          "enable_fibonacci_adjustment": true,
+          "enable_ma_adjustment": true,
+          "w_bottom_detection": true,
+          "double_top_detection": true
+        },
+
+        "smart_reduction": {
+          "enabled": true,
+          "base_roi_threshold": 30,
+          "reduction_confirmation": {
+            "volume_threshold": 0.8,
+            "rsi_bull_threshold": 70,
+            "rsi_bear_threshold": 30,
+            "atr_stability_required": true
+          }
+        }
+      }
+    },
+    "leverage_range": {
+      "initial": [
+        2,
+        5
+      ],
+      "bull": [
+        10,
+        20
+      ],
+      "bear": [
+        1,
+        3
+      ]
+    },
+    "position_management": {
+      "portions": 3,
+      "add_position_conditions": {
+        "min_profit": 0.02,
+        "max_add_count": 3,
+        "add_sizes": [
+          0.5,
+          0.3,
+          0.2
+        ]
+      },
+      "reduce_position_conditions": {
+        "profit_levels": [
+          0.03,
+          0.06,
+          0.09
+        ],
+        "reduce_ratios": [
+          0.3,
+          0.5,
+          0.7
+        ]
+      },
+      "time_based_management": {
+        "reduce_after_minutes": 30,
+        "close_after_minutes": 60,
+        "reduce_ratio": 0.5
+      }
+    }
+  },
+  "coin_selection": {
+    "enabled": true,
+    "scan_interval_minutes": 30,
+    "min_volume_24h": 30000000,
+    "min_market_cap": 50000000,
+    "max_symbols": 20,
+    "top_volume_count": 50,
+    "enable_short_trading": true,
+    "excluded_symbols": [
+      "USDCUSDT",
+      "BUSDUSDT",
+      "TUSDUSDT"
+    ],
+    "volume_filter": {
+      "min_24h_volume": 50000000,
+      "volume_spike_threshold": 1.5
+    },
+    "technical_filters": {
+      "min_rsi_oversold": 20,
+      "max_rsi_overbought": 80,
+      "trend_strength_min": 0.2,
+      "macd_divergence_required": false
+    },
+    "risk_filters": {
+      "max_volatility": 0.20,
+      "min_liquidity_score": 0.5
+    }
+  },
+  "signal_generation": {
+    "min_confidence": 0.53,
+    "max_signals_per_hour": 8,
+    "signal_expiry_minutes": 15,
+    "duplicate_filter": true,
+    "market_hours_only": false,
+    "volume_mult": 1.5,
+    "atr_mult": 0.5,
+    "vol_factor_mult": 0.05,
+    "back_div_gap_thresh": 0.1,
+    "hang_buffer": 0.01,
+    "signal_weights": {
+      "macd": 0.4,
+      "technical_indicators": 0.3,
+      "pattern_recognition": 0.2,
+      "cycle_analysis": 0.1
+    },
+    "noise_filter": {
+      "enabled": true,
+      "min_strength": 0.3,
+      "volatility_threshold": 0.02,
+      "volume_confirmation": true
+    }
+  },
+  "market_conditions": {
+    "cycle_detection": {
+      "enabled": true,
+      "ma_periods": [
+        50,
+        200
+      ],
+      "volume_threshold": 1.2,
+      "inflow_detection": true
+    },
+    "pattern_recognition": {
+      "enabled": true,
+      "patterns": [
+        "ENGULFING",
+        "HEAD_SHOULDER",
+        "CONVERGENCE_TRIANGLE"
+      ],
+      "min_confidence": 0.6,
+      "lookback_period": 50
+    },
+    "liquidity_analysis": {
+      "enabled": true,
+      "min_volume": 1000000,
+      "depth_analysis": true,
+      "backup_sources": [
+        "coingecko"
+      ]
+    }
+  },
+  "execution": {
+    "async_enabled": true,
+    "order_types": {
+      "market": true,
+      "limit": true,
+      "stop": true,
+      "trailing_stop": true
+    },
+    "slippage_protection": {
+      "max_slippage": 0.001,
+      "price_deviation_threshold": 0.002
+    },
+    "order_management": {
+      "cancel_timeout": 30,
+      "retry_attempts": 3,
+      "partial_fill_handling": true
+    }
+  },
+  "monitoring": {
+    "metrics_interval": 60,
+    "alert_thresholds": {
+      "cpu_usage": 80,
+      "memory_usage": 85,
+      "error_rate": 0.05,
+      "api_latency": 5.0,
+      "consecutive_losses": 3,
+      "daily_loss_limit": 0.05
+    },
+    "telegram_enabled": true,
+    "log_level": "INFO",
+    "performance_tracking": {
+      "enabled": true,
+      "metrics": [
+        "win_rate",
+        "profit_factor",
+        "sharpe_ratio",
+        "max_drawdown"
+      ],
+      "reporting_interval": 3600
+    }
+  },
+  "system": {
+    "resource_monitoring": {
+      "enabled": true,
+      "cpu_threshold": 80,
+      "memory_threshold": 85,
+      "pause_on_high_usage": true,
+      "check_interval": 30
+    },
+    "backup_data_sources": {
+      "enabled": true,
+      "fallback_apis": [
+        "coingecko",
+        "coinmarketcap"
+      ],
+      "failover_delay": 5
+    }
+  },
+  "ENHANCED_PATTERN_CONFIG": {
+    "enabled": true,
+    "weight_in_total_score": 0.15,
+    "min_confidence": 0.5,
+    "max_signals_per_day": 8,
+    "testing_period_days": 7,
+    "success_threshold": 0.6,
+    "pattern_weights": {
+      "double_bottom_bull": 0.75,
+      "double_top_bear": 0.75,
+      "engulfing_bull": 0.6,
+      "engulfing_bear": 0.6,
+      "head_shoulder_bear": 0.65,
+      "head_shoulder_bull": 0.65,
+      "convergence_triangle_bull": 0.55,
+      "convergence_triangle_bear": 0.55
+    },
+    "integration_mode": "auxiliary_enhancer",
+    "fallback_enabled": true,
+    "double_pattern_config": {
+      "min_bars": 10,
+      "max_bars": 50,
+      "similarity_thresh": 0.1,
+      "volume_mult": 1.2,
+      "rsi_bull_thresh": 50,
+      "rsi_bear_thresh": 50,
+      "min_confidence": 0.5
+    }
+  },
+  "redis_url": "redis://localhost:6379/0",
+  "max_workers": 5,
+  "enable_backtesting": true
+}

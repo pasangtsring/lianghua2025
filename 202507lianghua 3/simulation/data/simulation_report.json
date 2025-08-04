@@ -1,0 +1,23 @@
+{
+  "total_trades": 3,
+  "winning_trades": 2,
+  "losing_trades": 1,
+  "win_rate": 0.6666666666666666,
+  "profit_factor": 0.09744094488189019,
+  "total_pnl": -0.16419999999999932,
+  "current_capital": 64.83579999999999,
+  "initial_capital": 65.0,
+  "return_percentage": -0.25261538461539557,
+  "max_drawdown": 0.002821538461538554,
+  "current_drawdown": 0.002526153846153971,
+  "avg_trade_pnl": -0.054733333333333106,
+  "total_profit": 0.03900000000000002,
+  "total_loss": 0.20319999999999933,
+  "trading_days": 1,
+  "trades_per_day": 3.0,
+  "max_consecutive_losses": 1,
+  "current_consecutive_losses": 0,
+  "open_positions": 0,
+  "status": "UNDERPERFORMING",
+  "last_update": "2025-07-28T04:51:57.209076"
+}

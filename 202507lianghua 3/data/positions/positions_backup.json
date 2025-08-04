@@ -1,0 +1,419 @@
+{
+  "BTCUSDT": {
+    "type": "LONG",
+    "side": "LONG",
+    "entry_price": 116846.99037999619,
+    "size": 0.03617934519538746,
+    "stop_loss": 115678.52047619622,
+    "take_profit": 120352.40009139608,
+    "confidence": 1.0,
+    "strength": "very_strong",
+    "risk_reward_ratio": 4.499999999999968,
+    "market_condition": "强烈看涨",
+    "order_id": "BINANCE_742083805035",
+    "timestamp": "2025-08-01 04:36:28.665030",
+    "reasons": [
+      "增强MACDbullish背离",
+      "市场状态: 强烈看涨"
+    ],
+    "buy_reasons": {
+      "entry_timestamp": "2025-08-01T02:17:43.828146",
+      "basic_reasons": [
+        "增强MACDbullish背离",
+        "市场状态: 强烈看涨"
+      ],
+      "macd_bullish_divergence": true,
+      "macd_line": -167.93960527573654,
+      "macd_signal": -85.90331791297962,
+      "price_vs_sma20": -0.5541497683241953
+    },
+    "add_count": 5,
+    "last_add_time": "2025-08-01 04:37:08.565630",
+    "last_updated": "2025-08-01T04:37:08.568196",
+    "unrealized_pnl": 0.0,
+    "position_amt": 0.03,
+    "progressive_stop_loss": 117439.1,
+    "progressive_stop_loss_updated_at": "2025-08-01 02:26:44.018427",
+    "progressive_stop_loss_reason": "ROI5.5% Level1，移至保本点",
+    "original_stop_loss": 116526.64693999999,
+    "last_sl_tp_update": "2025-08-01 04:37:08.565724"
+  },
+  "ETHUSDT": {
+    "type": "SHORT",
+    "side": "SHORT",
+    "entry_price": 3629.2404092139736,
+    "size": 0.4361770506465006,
+    "stop_loss": 3665.5328133061134,
+    "take_profit": 3520.363196937554,
+    "confidence": 0.5533333333333333,
+    "strength": "weak",
+    "risk_reward_ratio": 2.4545454545454426,
+    "market_condition": "中性",
+    "order_id": "BINANCE_8389765929615604760",
+    "timestamp": "2025-08-01 23:01:42.386638",
+    "reasons": [
+      "市场状态: 中性",
+      "信号一致性强"
+    ],
+    "add_count": 5,
+    "last_add_time": "2025-08-01 23:02:21.885367",
+    "unrealized_pnl": 0.0,
+    "position_amt": -0.366,
+    "buy_reasons": {
+      "basic_reasons": [],
+      "entry_timestamp": "2025-08-01T22:50:04.459848",
+      "persistence_missing": true
+    },
+    "last_sl_tp_update": "2025-08-01 23:02:21.885416",
+    "last_updated": "2025-08-01T23:02:21.886004"
+  },
+  "BNBUSDT": {
+    "type": "SHORT",
+    "side": "SHORT",
+    "entry_price": 763.3973037225783,
+    "size": 2.083388300372024,
+    "stop_loss": 771.0312767598041,
+    "take_profit": 740.4953846109009,
+    "confidence": 0.5333333333333333,
+    "strength": "weak",
+    "risk_reward_ratio": 2.4545454545454692,
+    "market_condition": "中性",
+    "order_id": "BINANCE_73760998274",
+    "timestamp": "2025-08-02 00:02:48.584267",
+    "reasons": [
+      "市场状态: 中性"
+    ],
+    "add_count": 5,
+    "last_add_time": "2025-08-02 00:03:30.239784",
+    "unrealized_pnl": 0.0,
+    "position_amt": -1.73,
+    "buy_reasons": {
+      "basic_reasons": [],
+      "entry_timestamp": "2025-08-01T23:32:21.004433",
+      "persistence_missing": true
+    },
+    "progressive_stop_loss": 766.6943999999999,
+    "progressive_stop_loss_updated_at": "2025-08-01 23:38:28.901569",
+    "progressive_stop_loss_reason": "亏损状态技术止损(置信度0.80)",
+    "original_stop_loss": 767.760634,
+    "last_sl_tp_update": "2025-08-02 00:03:30.239936",
+    "last_updated": "2025-08-02T00:03:30.241507"
+  },
+  "TREEUSDT": {
+    "type": "SHORT",
+    "side": "SHORT",
+    "entry_price": 0.5507352653691728,
+    "size": -1717.729990629971,
+    "stop_loss": 0.5562426180228646,
+    "take_profit": 0.5342132074080976,
+    "confidence": 0.7066666666666667,
+    "strength": "very_strong",
+    "risk_reward_ratio": 2.454545454545491,
+    "market_condition": "中性",
+    "order_id": "BINANCE_84565115",
+    "timestamp": "2025-08-02 00:36:58.219262",
+    "reasons": [
+      "增强engulfing_bull形态",
+      "市场状态: 中性",
+      "信号一致性强"
+    ],
+    "add_count": 5,
+    "last_add_time": "2025-08-02 00:37:45.004638",
+    "unrealized_pnl": 0.0,
+    "position_amt": -3695.0,
+    "buy_reasons": {
+      "basic_reasons": [],
+      "entry_timestamp": "2025-08-02T00:03:34.036900",
+      "persistence_missing": true
+    },
+    "progressive_stop_loss": 0.53196348037888,
+    "progressive_stop_loss_updated_at": "2025-08-02 00:37:00.229087",
+    "progressive_stop_loss_reason": "ROI93.3% Level5，动态保护60%利润",
+    "original_stop_loss": 0.5452112553333333,
+    "last_sl_tp_update": "2025-08-02 00:37:45.004695",
+    "last_updated": "2025-08-02T00:37:45.006612",
+    "reduction_base_position": 3695.0,
+    "reduction_base_set": true,
+    "reduction_base_roi": 35.055210738559715,
+    "reduction_base_timestamp": "2025-08-01T16:35:32.508882+00:00",
+    "total_reduced": 1478.0,
+    "reduction_history": [
+      {
+        "amount": 1478.0,
+        "timestamp": "2025-08-01T16:36:59.948028+00:00",
+        "roi_when_reduced": 93.30935446463083,
+        "strategy_name": "progressive_reduction",
+        "strategy_description": "累计减仓40%",
+        "calculation_details": {
+          "needed_reduction": 1478.0,
+          "calculation_type": "cumulative",
+          "target_pct": 0.4,
+          "base_position": 3695.0,
+          "current_position": 3695.0,
+          "already_reduced": 0.0,
+          "description": "累计目标40%，已减0.000000，还需1478.000000"
+        }
+      }
+    ],
+    "last_reduction_time": "2025-08-01T16:36:59.948035+00:00"
+  },
+  "SOLUSDT": {
+    "type": "SHORT",
+    "side": "SHORT",
+    "entry_price": 164.58491121351497,
+    "size": 8.20041530441543,
+    "stop_loss": 166.23076032565012,
+    "take_profit": 159.6473638771095,
+    "confidence": 0.5533333333333333,
+    "strength": "weak",
+    "risk_reward_ratio": 2.454545454545477,
+    "market_condition": "中性",
+    "order_id": "BINANCE_133229726937",
+    "timestamp": "2025-08-02 06:27:22.159821",
+    "reasons": [
+      "市场状态: 中性",
+      "信号一致性强"
+    ],
+    "add_count": 5,
+    "last_add_time": "2025-08-02 06:28:06.985075",
+    "unrealized_pnl": 0.0,
+    "position_amt": -6.61,
+    "buy_reasons": {
+      "basic_reasons": [],
+      "entry_timestamp": "2025-08-02T00:57:17.240929",
+      "persistence_missing": true
+    },
+    "last_sl_tp_update": "2025-08-02 06:28:06.985209",
+    "last_updated": "2025-08-02T06:28:06.987428",
+    "progressive_stop_loss": 163.22204999999997,
+    "progressive_stop_loss_updated_at": "2025-08-02 06:27:23.343845",
+    "progressive_stop_loss_reason": "保持原止损",
+    "original_stop_loss": 168.461286359773,
+    "reduction_base_position": 6.31,
+    "reduction_base_set": true,
+    "reduction_base_roi": 32.631754048798086,
+    "reduction_base_timestamp": "2025-08-01T20:08:13.473814+00:00",
+    "total_reduced": 1.262,
+    "reduction_history": [
+      {
+        "amount": 1.262,
+        "timestamp": "2025-08-01T22:13:59.780178+00:00",
+        "roi_when_reduced": 50.005970669987555,
+        "strategy_name": "first_reduction",
+        "strategy_description": "首次减仓20%",
+        "calculation_details": {
+          "needed_reduction": 1.262,
+          "calculation_type": "single",
+          "target_pct": 0.2,
+          "base_position": 6.31,
+          "current_position": 7.87,
+          "already_reduced": 0.0,
+          "description": "首次单次减仓20%，需要1.262000"
+        }
+      }
+    ],
+    "last_reduction_time": "2025-08-01T22:13:59.780184+00:00"
+  },
+  "XRPUSDT": {
+    "type": "SHORT",
+    "side": "SHORT",
+    "entry_price": 2.9795189208740482,
+    "size": 522.928566374318,
+    "stop_loss": 3.009314110082789,
+    "take_profit": 2.8901333532478266,
+    "confidence": 0.5333333333333333,
+    "strength": "weak",
+    "risk_reward_ratio": 2.454545454545448,
+    "market_condition": "中性",
+    "order_id": "BINANCE_114255919314",
+    "timestamp": "2025-08-02 15:51:43.627144",
+    "reasons": [
+      "市场状态: 中性"
+    ],
+    "add_count": 5,
+    "last_add_time": "2025-08-02 15:52:25.249870",
+    "unrealized_pnl": 0.0,
+    "position_amt": -437.6,
+    "buy_reasons": {
+      "basic_reasons": [],
+      "entry_timestamp": "2025-08-02T15:29:28.636666",
+      "persistence_missing": true
+    },
+    "progressive_stop_loss": 2.9935935,
+    "progressive_stop_loss_updated_at": "2025-08-02 15:29:38.079958",
+    "progressive_stop_loss_reason": "亏损状态技术止损(置信度0.80)",
+    "original_stop_loss": 3.0018035033333335,
+    "last_sl_tp_update": "2025-08-02 15:52:25.249966",
+    "last_updated": "2025-08-02T15:52:25.251397"
+  },
+  "SUIUSDT": {
+    "type": "SHORT",
+    "side": "SHORT",
+    "entry_price": 3.4684835534150107,
+    "size": 517.9884321519374,
+    "stop_loss": 3.503168388949161,
+    "take_profit": 3.3644290468125604,
+    "confidence": 0.5333333333333333,
+    "strength": "weak",
+    "risk_reward_ratio": 2.4545454545454697,
+    "market_condition": "中性",
+    "order_id": "BINANCE_29688739881",
+    "timestamp": "2025-08-02 20:01:31.924730",
+    "reasons": [
+      "市场状态: 中性"
+    ],
+    "add_count": 5,
+    "last_add_time": "2025-08-02 20:02:27.877238",
+    "unrealized_pnl": 0.0,
+    "position_amt": -443.4,
+    "buy_reasons": {
+      "basic_reasons": [],
+      "entry_timestamp": "2025-08-02T15:29:28.635202",
+      "persistence_missing": true
+    },
+    "progressive_stop_loss": 3.4211205,
+    "progressive_stop_loss_updated_at": "2025-08-02 20:01:34.075951",
+    "progressive_stop_loss_reason": "保持现有止损(已超过40%保护)",
+    "original_stop_loss": 3.525775091505045,
+    "last_sl_tp_update": "2025-08-02 20:02:27.877297",
+    "last_updated": "2025-08-02T20:02:27.879249",
+    "reduction_base_position": 443.4,
+    "reduction_base_set": true,
+    "reduction_base_roi": 39.06099748982394,
+    "reduction_base_timestamp": "2025-08-02T10:20:02.927254+00:00"
+  },
+  "LINKUSDT": {
+    "symbol": "LINKUSDT",
+    "side": "SHORT",
+    "size": 41.6541123353785,
+    "entry_price": 15.894300482198998,
+    "unrealized_pnl": 0.0,
+    "position_amt": -25.44,
+    "timestamp": "2025-08-03 03:43:44.498720",
+    "add_count": 2,
+    "last_add_time": "2025-08-03 03:44:30.367070",
+    "buy_reasons": {
+      "basic_reasons": [],
+      "entry_timestamp": "2025-08-02T15:29:28.636934",
+      "persistence_missing": true
+    },
+    "reasons": [
+      "市场状态: 中性"
+    ],
+    "stop_loss": 16.05324348702099,
+    "take_profit": 15.417471467733028,
+    "progressive_stop_loss": 15.698099999999998,
+    "progressive_stop_loss_updated_at": "2025-08-03 03:43:51.128094",
+    "progressive_stop_loss_reason": "保持现有止损(已超过40%保护)",
+    "original_stop_loss": 16.177675258160853,
+    "reduction_base_position": 31.8,
+    "reduction_base_set": true,
+    "reduction_base_roi": 31.51753440294248,
+    "reduction_base_timestamp": "2025-08-02T15:50:11.370771+00:00",
+    "total_reduced": 6.36,
+    "reduction_history": [
+      {
+        "amount": 6.36,
+        "timestamp": "2025-08-02T17:52:59.926312+00:00",
+        "roi_when_reduced": 57.63882143880592,
+        "strategy_name": "first_reduction",
+        "strategy_description": "首次减仓20%",
+        "calculation_details": {
+          "needed_reduction": 6.36,
+          "calculation_type": "single",
+          "target_pct": 0.2,
+          "base_position": 31.8,
+          "current_position": 31.8,
+          "already_reduced": 0.0,
+          "description": "首次单次减仓20%，需要6.360000"
+        }
+      }
+    ],
+    "last_reduction_time": "2025-08-02T17:52:59.926327+00:00",
+    "last_sl_tp_update": "2025-08-03 03:44:30.367235",
+    "last_updated": "2025-08-03T03:44:30.369708"
+  },
+  "UNIUSDT": {
+    "symbol": "UNIUSDT",
+    "side": "SHORT",
+    "size": 169.2463250975752,
+    "entry_price": 8.870315845486452,
+    "unrealized_pnl": 0.0,
+    "position_amt": -130.0,
+    "timestamp": "2025-08-03 08:20:46.848103",
+    "add_count": 5,
+    "last_add_time": "2025-08-03 08:21:26.699626",
+    "buy_reasons": {
+      "basic_reasons": [],
+      "entry_timestamp": "2025-08-02T15:29:28.635617",
+      "persistence_missing": true
+    },
+    "reasons": [
+      "市场状态: 中性"
+    ],
+    "stop_loss": 8.959019003941316,
+    "take_profit": 8.604206370121858,
+    "progressive_stop_loss": 8.75355,
+    "progressive_stop_loss_updated_at": "2025-08-03 08:20:49.060246",
+    "progressive_stop_loss_reason": "保持现有止损(已超过40%保护)",
+    "original_stop_loss": 9.116263626794895,
+    "reduction_base_position": 56.0,
+    "reduction_base_set": true,
+    "reduction_base_roi": 30.940594059405946,
+    "reduction_base_timestamp": "2025-08-02T16:30:45.172456+00:00",
+    "last_sl_tp_update": "2025-08-03 08:21:26.699834",
+    "last_updated": "2025-08-03T08:21:26.704554",
+    "total_reduced": 11.200000000000001,
+    "reduction_history": [
+      {
+        "amount": 11.200000000000001,
+        "timestamp": "2025-08-02T17:52:51.669569+00:00",
+        "roi_when_reduced": 52.74574723141912,
+        "strategy_name": "first_reduction",
+        "strategy_description": "首次减仓20%",
+        "calculation_details": {
+          "needed_reduction": 11.200000000000001,
+          "calculation_type": "single",
+          "target_pct": 0.2,
+          "base_position": 56.0,
+          "current_position": 84.0,
+          "already_reduced": 0.0,
+          "description": "首次单次减仓20%，需要11.200000"
+        }
+      }
+    ],
+    "last_reduction_time": "2025-08-02T17:52:51.669578+00:00"
+  },
+  "MAGICUSDT": {
+    "type": "SHORT",
+    "side": "SHORT",
+    "entry_price": 0.18395215344394816,
+    "size": 8460.49599659802,
+    "stop_loss": 0.18579167497838764,
+    "take_profit": 0.1784335888406297,
+    "confidence": 0.5333333333333333,
+    "strength": "weak",
+    "risk_reward_ratio": 2.4545454545454386,
+    "market_condition": "中性",
+    "order_id": "BINANCE_4614501870",
+    "timestamp": "2025-08-03 01:51:40.789915",
+    "reasons": [
+      "市场状态: 中性"
+    ],
+    "add_count": 5,
+    "last_add_time": "2025-08-03 01:52:34.945773",
+    "unrealized_pnl": 0.0,
+    "position_amt": -7068.6,
+    "buy_reasons": {
+      "basic_reasons": [],
+      "entry_timestamp": "2025-08-03T01:14:56.557927",
+      "persistence_missing": true
+    },
+    "progressive_stop_loss": 0.18431699999999998,
+    "progressive_stop_loss_updated_at": "2025-08-03 01:51:50.234393",
+    "progressive_stop_loss_reason": "保持原止损",
+    "original_stop_loss": 0.18666101,
+    "last_sl_tp_update": "2025-08-03 01:52:34.945887",
+    "last_updated": "2025-08-03T01:52:34.947915"
+  }
+}
